@@ -29,7 +29,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.joshua" name="Joshua" version="2018.02.02" provider-name="Griffin">
+<addon id="plugin.video.joshua" name="Joshua" version="2018.02.03" provider-name="Griffin">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.nanscrapers" version="0.5.5"/>
