@@ -2,14 +2,14 @@
   <dir>
     <title>Actors</title>
     <link>file://shared lists/actors.xml</link>
+    <thumbnail>https://i.imgur.com/YOvUFH1.png</thumbnail>
     <summary>Actors List</summary>
-    <thumbnail>https://raw.githubusercontent.com/OpenELEQ/repository.elysium/master/images/Default/people.png</thumbnail>
   </dir>
 
   <dir>
     <title>Actress</title>
     <link>file://shared lists/actress.xml</link>
     <summary>Actress List</summary>
-    <thumbnail>https://raw.githubusercontent.com/OpenELEQ/repository.elysium/master/images/Default/people.png</thumbnail>
+<thumbnail>https://i.imgur.com/YOvUFH1.png</thumbnail>
   </dir>
 </xml>
