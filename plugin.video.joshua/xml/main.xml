@@ -1,11 +1,71 @@
+
+
+
 <xml>
+
+<dir>
+ <title>Greetings Professor Falken</title>
+ <link>message(https://pastebin.com/raw/BiYQu4FZ)</link>
+ <content></content>
+</dir>
+
+<dir>
+	<title>Documentaries</title>
+	<link>https://pastebin.com/raw/R6NQh0Kt</link>
+<thumbnail>https://i.imgur.com/1o8dhL8.png</thumbnail>
+<fanart>https://i.imgur.com/5lGY4Rj.jpg</fanart>
+	<content></content>
+</dir>
+
+
   <dir>
-    <title>Formats</title>
-    <link>file://formats/main.xml</link>
+    <title>Movies</title>
+    <link>file://movies.xml</link>
+<thumbnail>https://i.imgur.com/58onscy.png</thumbnail>
+<fanart>https://i.imgur.com/5lGY4Rj.jpg</fanart>
+    <summary>Movies</summary>
   </dir>
 
   <dir>
-    <title>Shared Lists</title>
-    <link>file://shared lists/main.xml</link>
+    <title>TV Shows</title>
+    <link>file://tvshows.xml</link>
+<thumbnail>https://i.imgur.com/OGPdU90.png</thumbnail>
+<fanart>https://i.imgur.com/5lGY4Rj.jpg</fanart>
+    <summary>TV Shows</summary>
+  </dir>
+
+  <dir>
+    <title>Trakt</title>
+    <link>file://trakt.xml</link>
+  <thumbnail>https://i.imgur.com/ciLSmPM.png</thumbnail>
+    <summary>Trakt</summary>
+  </dir>
+
+  <dir>
+    <title>Actors / Actresses</title>
+    <link>file://people.xml</link>
+<thumbnail>https://i.imgur.com/YOvUFH1.png</thumbnail>
+    <summary>Actors</summary>
+  </dir>
+  
+    <dir>
+    <title>Search</title>
+    <link>file://search.xml</link>
+  <thumbnail>https://i.imgur.com/oAmwPR9.png</thumbnail>
+    <summary>Search</summary>
   </dir>
 </xml>
+
+  <plugin>
+    <title>Settings</title>
+    <link>plugin://plugin.video.joshua/?action=openSettings</link>
+   <thumbnail>https://i.imgur.com/b92h4bl.png</thumbnail>
+    <summary>Settings</summary>
+  </plugin>
+  
+    <plugin>
+    <title>Clear Cache</title>
+    <link>plugin://plugin.video.joshua/?mode=clearCache</link>
+    <thumbnail>https://i.imgur.com/jpSYLYo.png</thumbnail>
+  </plugin>
+

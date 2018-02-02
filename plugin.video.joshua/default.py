@@ -21,7 +21,7 @@ import __builtin__
 # CONFIGURATION VARIABLES
 # -----------------------
 # change these to suit your addons
-root_xml_url = "https://pastebin.com/raw/49DEKZPH"  # url of the root xml file
+root_xml_url = "file://main.xml"  # url of the root xml file
 __builtin__.tvdb_api_key = "CFF858D0F1E20087"  # tvdb api key
 __builtin__.tmdb_api_key = "2ef9142a78bea75cd5befbac2e4b64f0"  # tmdb api key
 __builtin__.trakt_client_id = "8dd6956f35778fba7c512a26eb67f3760f91a61f76a39ad8a2073e476b686b8f"  # trakt client id
@@ -157,6 +157,15 @@ def scraper_settings():
 @route(mode="ResolverSettings")
 def resolver_settings():
     xbmcaddon.Addon('script.module.urlresolver').openSettings()
+
+
+@route(mode="ClearTraktAccount")
+def clear_trakt_account():
+    import xbmcgui
+    if xbmcgui.Dialog().yesno(addon_name, "{0} Trakt {1}. {2}".format(_("Delete"), _("Settings").lower(), _("Are you sure?"))):
+        xbmcaddon.Addon().setSetting("TRAKT_EXPIRES_AT", "")
+        xbmcaddon.Addon().setSetting("TRAKT_ACCESS_TOKEN", "")
+        xbmcaddon.Addon().setSetting("TRAKT_REFRESH_TOKEN", "")
 
 
 @route(mode="message", args=["url"])
