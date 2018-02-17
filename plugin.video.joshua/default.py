@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
     default.py --- Jen Addon entry point
-    Copyright (C) 2017, Midraal
+    Copyright (C) 2017, griffin_303
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -151,12 +151,12 @@ def settings():
 
 @route(mode="ScraperSettings")
 def scraper_settings():
-    xbmcaddon.Addon('script.module.nanscrapers').openSettings()
+    xbmcaddon.Addon('script.module.universalscrapers').openSettings()
 
 
 @route(mode="ResolverSettings")
 def resolver_settings():
-    xbmcaddon.Addon('script.module.resolveurl').openSettings()
+    xbmcaddon.Addon('script.module.urlresolver').openSettings()
 
 
 @route(mode="ClearTraktAccount")
@@ -185,8 +185,8 @@ def clear_cache():
         koding.Remove_Table("meta")
         koding.Remove_Table("episode_meta")
     if dialog.yesno(addon_name, _("Clear Scraper Cache?")):
-        import nanscrapers
-        nanscrapers.clear_cache()
+        import universalscrapers
+        universalscrapers.clear_cache()
     if dialog.yesno(addon_name, _("Clear GIF Cache?")):
         dest_folder = os.path.join(
             xbmc.translatePath(xbmcaddon.Addon().getSetting("cache_folder")),

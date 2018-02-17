@@ -2,12 +2,12 @@
   <dir>
     <title>Search TMDB</title>
     <tmdb>search</tmdb>
-    <thumbnail>https://i.imgur.com/oAmwPR9.png</thumbnail>
+    <thumbnail>https://raw.githubusercontent.com/OpenELEQ/repository.elysium/master/images/Default/tmdb.png</thumbnail>
   </dir>
 
   <dir>
     <title>Search Trakt</title>
     <trakt>search</trakt>
-    <thumbnail>https://i.imgur.com/oAmwPR9.png</thumbnail>
+    <thumbnail>https://raw.githubusercontent.com/OpenELEQ/repository.elysium/master/images/Default/trakt.png</thumbnail>
   </dir>
 </xml>
